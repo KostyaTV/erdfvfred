@@ -1,17 +1,15 @@
-count = 0
-between = False
+ludi_mezhdu = 0
+aleksandra = False
 
 while True:
-    name = input()
+    imya = input("Введите имя: ")
 
-    if name == "Александра":
-        between = True
+    if imya == "Александра":
+        aleksandra = True
         continue
-
-    if name == "Левон":
+    elif imya == "Левон":
         break
+    else:
+        ludi_mezhdu += 1
 
-    if between:
-        count += 1
-
-print(count)
+print(f"Людей между Александрой и Левоном: {ludi_mezhdu}")
